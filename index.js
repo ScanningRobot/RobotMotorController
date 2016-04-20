@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 // START ROBOT PROCESS
 const spawn = require('child_process').spawn;
-const robot = spawn('python', ['-u', 'serverTest.py']);
+const robot = spawn('python', ['-u', 'dcController.py']);
 
 robot.stdin.setEncoding('utf-8');
 robot.stdout.setEncoding('utf-8');
