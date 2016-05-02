@@ -31,11 +31,13 @@ def moveLeft():
     myMotorR.run(Adafruit_MotorHAT.RELEASE)
     myMotorL.run(Adafruit_MotorHAT.RELEASE)
     myMotorR.run(Adafruit_MotorHAT.FORWARD)
+    myMotorL.run(Adafruit_MotorHAT.BACKWARD)
 
 def moveRight():
     myMotorR.run(Adafruit_MotorHAT.RELEASE)
     myMotorL.run(Adafruit_MotorHAT.RELEASE)
     myMotorL.run(Adafruit_MotorHAT.FORWARD)
+    myMotorR.run(Adafruit_MotorHAT.BACKWARD)
 
 atexit.register(turnOffMotors)
 
